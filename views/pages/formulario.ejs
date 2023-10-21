@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicLink - Crear uno nuevo</title>
+    <%- include("../partials/head.ejs") -%>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="/new" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label>Titulo</label>
+                <input type="text" name="title" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="image">Imagen</label>
+                <input type="file" class="form-control" name="image">
+            </div>
+            <div class="mb-3 text-end">
+                <button class="btn btn-primary" type="submit">Registrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

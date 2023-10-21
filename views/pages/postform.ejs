@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicLink</title>
+    <%- include("../partials/head.ejs") -%>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector("#btn").addEventListener("click", () => {
+                window.location.href = "/visor?id=<%- enlace %>";
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Se ha generado correctamente tu qr chingon</p>
+    <qr-code contents="https://ae2a-189-203-84-82.ngrok-free.app/visor?id=<%- enlace %>" style="width: 450px; height: 450px; margin: 2em auto; background-color: #fff;"> <img src="/hiro.png" width="150px" height="150px" slot="icon"> </img></qr-code>
+    <!-- <button class="btn btn-primary" id="btn">Visitar enlace</button> -->
+    <a href="https://ae2a-189-203-84-82.ngrok-free.app/visor?id=<%- enlace %>">Visitar enlace</a>
+</body>
+</html>

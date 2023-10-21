@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicLink</title>
+    <%- include("../partials/head.ejs") -%>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector("#btn").addEventListener("click", () => {
+                window.location.href = "/new";
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Landing page</p>
+    <button id="btn" class="btn btn-primary">Crear nuevo enlace</button>
+    
+</body>
+</html>

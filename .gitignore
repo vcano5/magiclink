@@ -1,0 +1,14 @@
+node_modules
+
+# Se almacenan datos que no estan disponibles
+db.json
+public/uploads
+
+# Modelos 3D para evitar problemas de autor
+*.obj
+*.gltf
+*.lib
+*.mtl
+*.png
+nsfw
+public/whopper
